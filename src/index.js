@@ -1,3 +1,5 @@
+import "./styles.css";
+
 console.log("hello world");
 let key = "Y3NCRY3KKECRAVJVMRBG92VWC";
 let locationQuery = "dubai";
