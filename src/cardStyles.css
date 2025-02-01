@@ -1,7 +1,17 @@
+.mainDiv {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 .card {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+	align-items: center;
 	padding: 50px;
+	margin: 10px;
+	border: 1px solid var(--first);
+	border-radius: 10px;
 	img {
 		height: 50px;
 	}
