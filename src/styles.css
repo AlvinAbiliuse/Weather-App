@@ -3,6 +3,28 @@
 	margin: 0;
 	line-height: 1.4em;
 	box-sizing: border-box;
+	outline: 1px solid red;
 }
 
+.container {
+	display: grid;
+	grid-template-columns:
+		[full-page-start]
+		minmax(10px, 200px)
+		[content-start]
+		2fr
+		[content-end]
+		minmax(10px, 200px)
+		[full-page-end];
+}
+
+.container > * {
+	grid-column: content;
+	min-width: 450px;
+	text-align: center;
+}
+
+body {
+	padding: 20px 0;
+}
 
