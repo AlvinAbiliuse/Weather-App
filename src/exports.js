@@ -25,6 +25,7 @@ import thundershowersday from "./images/thunder-showers-day.svg";
 import thundershowersnight from "./images/thunder-showers-night.svg";
 import wind from "./images/wind.svg";
 
+export { updatePage } from "./updatePage.js";
 export { default as getData } from "./getData.js";
 export const images = {
 	clearday: clearday,

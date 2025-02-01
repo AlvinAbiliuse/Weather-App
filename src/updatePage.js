@@ -5,7 +5,9 @@ function createCards(data, images) {
 	let card = document.createElement("div");
 	card.className = "card";
 	let leftContents = document.createElement("div");
+	let rightContents = document.createElement("div");
 	leftContents.className = "leftContents";
+	rightContents.className = "rightContents";
 	let h3 = document.createElement("h3");
 	let datetime = document.createElement("p");
 	let temp = document.createElement("p");
@@ -18,7 +20,7 @@ function createCards(data, images) {
 	leftContents.appendChild(datetime);
 	leftContents.appendChild(temp);
 
-	let img = document.createChild("img");
+	let img = document.createElement("img");
 	img.src = images[data.icon.split("-").join("")];
 
 	rightContents.appendChild(img);
@@ -27,6 +29,7 @@ function createCards(data, images) {
 	card.appendChild(rightContents);
 	return card;
 }
+
 function mainCard(data, images) {
 	let h2 = document.createElement("h2");
 	h2.textContent = data.address;
@@ -43,7 +46,7 @@ function collapsedCards(data, images) {
 	let mainDiv = document.createElement("div");
 	mainDiv.className = "hidden";
 	for (let i in data.days) {
-		mainDiv.appendChild(createCard(data.days[i], images));
+		mainDiv.appendChild(createCards(data.days[i], images));
 	}
 
 	mainContents.appendChild(mainDiv);

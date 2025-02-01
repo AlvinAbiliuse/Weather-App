@@ -1,4 +1,4 @@
-import { getData, images } from "./exports.js";
+import { updatePage, getData, images } from "./exports.js";
 
 let data;
 
@@ -9,7 +9,7 @@ let input = formEl.querySelector("input");
 
 formEl.addEventListener("submit", (e) => {
 	data = getData(input.value);
-	data.then((data) => console.log(data));
+	data.then((data) => updatePage(data, images));
 	input.value = "";
 	e.preventDefault();
 });
