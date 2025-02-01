@@ -8,9 +8,10 @@ let data;
 async function getData() {
 	let response = await fetch(url);
 	data = await response.json();
+	console.log(data);
 	//imgEl.src = images[data.currentConditions.icon.split("-").join("")];
 }
 
 let imgEl = document.querySelector(".image");
 
-// getData();
+getData();
