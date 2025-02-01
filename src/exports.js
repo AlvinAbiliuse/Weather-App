@@ -1,6 +1,6 @@
+import "./colors.css";
 import "./styles.css";
 import "./searchContainerStyles.css";
-import "./colors.css";
 import "./cardStyles.css";
 
 import clearday from "./images/clear-day.svg";

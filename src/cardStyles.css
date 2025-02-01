@@ -10,7 +10,7 @@
 	align-items: center;
 	padding: 50px;
 	margin: 10px;
-	border: 1px solid var(--first);
+	border: 1px solid black;
 	border-radius: 10px;
 	img {
 		height: 50px;
