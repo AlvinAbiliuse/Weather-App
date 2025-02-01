@@ -28,7 +28,7 @@ export const imageList = [
 	clearnight,
 	cloudy,
 	fog,
-	hair,
+	hail,
 	partlycloudyday,
 	partlycloudynight,
 	rain,
