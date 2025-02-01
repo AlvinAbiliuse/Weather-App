@@ -7,7 +7,21 @@ function createCards(data, images) {
 	let leftContents = document.createElement("div");
 	leftContents.className = "leftContents";
 	let h3 = document.createElement("h3");
-	let p = document.createElement("p");
+	let datetime = document.createElement("p");
+	let temp = document.createElement("p");
+
+	h3.textContent = "Conditions: " + data.conditions;
+	datetime.textContent = new Date(data.datetimeEpoch);
+	temp.textContent = "Temperature: " + data.temp;
+
+	leftContents.appendChild(h3);
+	leftContents.appendChild(datetime);
+	leftContents.appendChild(temp);
+
+	let img = document.createChild("img");
+	img.src = images[data.icon.split("-").join("")];
+
+	rightContents.appendChild(img);
 
 	card.appendChild(leftContents);
 	card.appendChild(rightContents);
