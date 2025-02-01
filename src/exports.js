@@ -1,5 +1,7 @@
 import "./styles.css";
 import "./searchContainerStyles.css";
+import "./colors.css";
+
 import clearday from "./images/clear-day.svg";
 import clearnight from "./images/clear-night.svg";
 import cloudy from "./images/cloudy.svg";

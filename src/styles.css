@@ -20,11 +20,11 @@
 
 .container > * {
 	grid-column: content;
-	min-width: 450px;
+	min-width: 400px;
 	text-align: center;
+	margin: 20px 0;
 }
 
 body {
 	padding: 20px 0;
 }
-
