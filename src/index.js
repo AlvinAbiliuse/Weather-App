@@ -1,4 +1,4 @@
-import "./styles.css";
+import images from "./exports.js"
 
 console.log("hello world");
 let key = "Y3NCRY3KKECRAVJVMRBG92VWC";

@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import clearday from "./images/clear-day.svg";
 import clearnight from "./images/clear-night.svg";
 import cloudy from "./images/cloudy.svg";
