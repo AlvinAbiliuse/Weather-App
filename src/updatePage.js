@@ -46,10 +46,12 @@ function collapsedCards(data, images) {
 
 	mainContents.appendChild(mainDiv);
 }
-
 export function updatePage(data, images) {
+	let loader = document.querySelector(".loader");
+	loader.className = "loader";
 	topContainer.innerHTML = "";
 	mainContents.innerHTML = "";
 	mainCard(data, images);
 	collapsedCards(data, images);
+	loader.className = "loader hidden";
 }
