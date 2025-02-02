@@ -1,6 +1,8 @@
+import createCards from "./createCard.js";
+
 let topContainer = document.querySelector(".topContainer");
 let mainContents = document.querySelector(".mainContents");
-
+/*
 function createCards(data, images) {
 	let card = document.createElement("div");
 	card.className = "card";
@@ -17,7 +19,6 @@ function createCards(data, images) {
 	} else {
 		date.textContent = "Date: " + new Date(data.datetime);
 	}
-	/*data.datetimeEpoch);*/
 	conditions.textContent = "Conditions: " + data.conditions;
 	temp.textContent = "Temperature: " + data.temp + " ℉";
 
@@ -33,7 +34,7 @@ function createCards(data, images) {
 	card.appendChild(leftContents);
 	card.appendChild(rightContents);
 	return card;
-}
+} */
 
 function mainCard(data, images) {
 	let currentDate = data.days[0].datetime;
