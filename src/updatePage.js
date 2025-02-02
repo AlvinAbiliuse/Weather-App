@@ -11,8 +11,13 @@ function createCards(data, images) {
 	let date = document.createElement("h3");
 	let conditions = document.createElement("p");
 	let temp = document.createElement("p");
-
-	date.textContent = "Date: " + new Date(data.datetimeEpoch);
+	let currentDate = Date.now();
+	if (new Date(data.datetime) == "Invalid Date") {
+		date.textContent = "Time: " + data.datetime;
+	} else {
+		date.textContent = "Date: " + new Date(data.datetime);
+	}
+	/*data.datetimeEpoch);*/
 	conditions.textContent = "Conditions: " + data.conditions;
 	temp.textContent = "Temperature: " + data.temp + " ℉";
 
@@ -31,6 +36,8 @@ function createCards(data, images) {
 }
 
 function mainCard(data, images) {
+	let currentDate = data.days[0].datetime;
+	console.log(data);
 	let h2 = document.createElement("h2");
 	h2.textContent = data.address;
 	topContainer.appendChild(h2);
@@ -51,4 +58,5 @@ export function updatePage(data, images) {
 	mainContents.innerHTML = "";
 	mainCard(data, images);
 	collapsedCards(data, images);
+	console.log(data);
 }
