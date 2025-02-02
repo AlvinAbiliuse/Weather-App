@@ -45,11 +45,16 @@ body {
 .hidden {
 	display: none;
 }
+
 /* HTML: <div class="loader"></div> */
 .loader {
-	width: 65px;
+	margin: 0 auto;
+	padding: 0;
+	width: 70px;
 	aspect-ratio: 1;
 	position: relative;
+	top: -30px;
+	filter: brightness(0) saturate(100%);
 }
 .loader:before,
 .loader:after {
