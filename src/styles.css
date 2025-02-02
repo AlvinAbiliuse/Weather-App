@@ -28,8 +28,7 @@ body {
 	padding: 20px 0;
 }
 
-.hidden {
-	visibility: hidden;
+.mainDiv {
 	transform-origin: top;
 	animation: 0.5s anim ease;
 }
