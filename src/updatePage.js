@@ -38,13 +38,8 @@ function mainCard(data, images) {
 }
 
 function collapsedCards(data, images) {
-	let openBtn = document.createElement("button");
-	openBtn.textContent = "show more";
-	openBtn.className = "showMore";
-	mainContents.appendChild(openBtn);
-
 	let mainDiv = document.createElement("div");
-	mainDiv.className = "mainDiv hidden";
+	mainDiv.className = "mainDiv";
 	for (let i in data.days) {
 		mainDiv.appendChild(createCards(data.days[i], images));
 	}

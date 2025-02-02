@@ -30,12 +30,13 @@ body {
 
 .hidden {
 	visibility: hidden;
-	animation: 1s anim ease;
+	transform-origin: top;
+	animation: 0.5s anim ease;
 }
 
 @keyframes anim {
 	0% {
-		transform: scale(0, 1);
+		transform: scale(1, 0);
 	}
 	100% {
 		transform: scale(1, 1);

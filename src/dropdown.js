@@ -1,4 +1,4 @@
-let path = document.querySelector(".mainDiv");
+let div = document.querySelector(".mainDiv");
 
 function toggle(path) {
 	console.log(path);
@@ -7,5 +7,5 @@ function toggle(path) {
 
 export function dropdown() {
 	let dropDownBtn = document.querySelector(".showMore");
-	dropDownBtn.addEventListener("click", () => toggle(path));
+	dropDownBtn.addEventListener("click", () => toggle(div));
 }
