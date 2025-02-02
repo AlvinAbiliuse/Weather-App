@@ -27,3 +27,17 @@
 body {
 	padding: 20px 0;
 }
+
+.hidden {
+	visibility: hidden;
+	animation: 1s anim ease;
+}
+
+@keyframes anim {
+	0% {
+		transform: scale(0, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}

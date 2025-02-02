@@ -1,13 +1,11 @@
-let path = document.querySelector(".dropDown ul");
+let path = document.querySelector(".mainDiv");
 
-function toggle() {
-  path.classList.toggle("show");
+function toggle(path) {
+	console.log(path);
+	path.classList.toggle("hidden");
 }
 
 export function dropdown() {
-  let dropDownBtn = document.querySelector(".dropDownButton");
-  dropDownBtn.addEventListener("click", toggle);
-  document.querySelector(".dropDownItems").addEventListener("focusout", () => {
-    path.classList.remove("show");
-  });
+	let dropDownBtn = document.querySelector(".showMore");
+	dropDownBtn.addEventListener("click", () => toggle(path));
 }
