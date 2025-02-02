@@ -14,7 +14,7 @@ function createCards(data, images) {
 
 	date.textContent = "Date: " + new Date(data.datetimeEpoch);
 	conditions.textContent = "Conditions: " + data.conditions;
-	temp.textContent = "Temperature: " + data.temp;
+	temp.textContent = "Temperature: " + data.temp + " ℉";
 
 	leftContents.appendChild(date);
 	leftContents.appendChild(conditions);
@@ -50,5 +50,5 @@ export function updatePage(data, images) {
 	topContainer.innerHTML = "";
 	mainContents.innerHTML = "";
 	mainCard(data, images);
-	collapsedCards(data, images);;
+	collapsedCards(data, images);
 }
